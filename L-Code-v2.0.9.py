@@ -523,7 +523,7 @@ def M84():
 def M103(temp):
   global ettemp, etemp
   ettemp = temp
-  print(color.GREEN"M103 T", temp)
+  print(color.GREEN, "M103 T", temp)
   light_matrix.write("M103")
   if ettemp < etemp:
     while etemp > ettemp:
